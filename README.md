@@ -1,11 +1,12 @@
 # Query는 Local DB로 만들었습니다.
+```sql
 CREATE TABLE [dbo].[CustomerTbl] (
-    [CId]     INT           IDENTITY (1, 1) NOT NULL,
-    [CName]   NVARCHAR (50) NOT NULL,
-    [CPhone]  VARCHAR (50)  NOT NULL,
-    [CAdd]    NVARCHAR (50) NOT NULL,
+    [CId] INT IDENTITY (1, 1) NOT NULL,
+    [CName] NVARCHAR (50) NOT NULL,
+    [CPhone] VARCHAR (50) NOT NULL,
+    [CAdd] NVARCHAR (50) NOT NULL,
     [CStatus] NVARCHAR (50) NOT NULL,
-    [CCar]    NVARCHAR (50) NOT NULL,
+    [CCar] NVARCHAR (50) NOT NULL,
     PRIMARY KEY CLUSTERED ([CId] ASC)
 );
 
